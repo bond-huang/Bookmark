@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+
+{% block header %}
+  <h1>{% block title %}Home{% endblock %}</h1>
+{% endblock %}
+
+
+<!-- 左侧导航 -->
+{% block category %}
+<div class="panel panel-primary">
+    <div class="panel-heading">
+        <h3 class="panel-title">Main Category</h3>
+    </div>
+    <ul class="nav nav-stacked">
+		{% for item in links %}
+			<li><a href="#{{ item['main_cg'] }}" data-toggle="tab">{{ item['main_cg'] }}</a></li>
+		{% endfor %}
+	</ul>
+</div>
+{% endblock %}
+
+{% block content %}
+<div id="myTabContent" class="tab-content">
+	{% for maincg in links %}
+		<div class="tab-pane fade in active" id="{{ maincg['main_cg'] }}">
+			{% for subcg in maincg['sub_cg_list'] %}
+			<div class="panel panel-primary">
+				<div class="panel-heading">
+					<h3 class="panel-title">{{ subcg['sub_cg'] }}</h3>
+				</div>
+			<div class="panel-body" aria-hidden="true">
+				{% for link in subcg['link'] %}
+					<div class="col-sm-3">
+						<a href="{{ link['urllocation'] }}">{{ link['urlname'] }}</a>
+					</div>
+				{% endfor %}
+			</div>	
+			</div>
+		  {% endfor %}
+		</div>
+	{% endfor %}
+</div>
+{% endblock %}
