@@ -1,13 +1,18 @@
 #!/bin/bash
-git config user.name "huang"
-git config user.email "huang19891023@163.com"
+git config user.name "${M_NAME}"
+git config user.email "${M_EMAIL}"
 git config --global core.quotepath false
 
 nohup waitress-serve --call 'nav:create_app' > nohup.log 2>&1 &
 if [ $? -ne 0 ];then
     exit 1
 fi
-cd ./dist
+git clone https://${GH_REF} .temp
+cd .temp
+git checkout gh-pages
+cd ../
+mv .temp/.git dist
+cd dist
 git init
 sleep 5
 git add .
