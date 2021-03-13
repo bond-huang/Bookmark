@@ -6,6 +6,6 @@ install:
   - pip install Flask
 branches:
   only:
-    - master
+    - main
 script:
   - travis_wait 10 bash start.sh
