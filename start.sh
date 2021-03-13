@@ -12,8 +12,6 @@ git checkout --orphan gh-pages
 git status
 sleep 5
 git add .
-sleep 5
-git add .
 git commit -m "Update gh-pages"
 git remote add origin git@github.com:bond-huang/navigator.git
 git push -f --force --quiet "https://${GH_TOKEN}@${GH_REF}" main:gh-pages
