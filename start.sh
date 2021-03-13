@@ -12,5 +12,5 @@ git init
 sleep 5
 git add .
 git commit -m "Update gh-pages"
-git push -f --force --quiet "https://${GH_TOKEN}@${GH_REF}" master:gh-pages
+git push -f --force --quiet "https://${GH_TOKEN}@${GH_REF}" main:gh-pages
 
