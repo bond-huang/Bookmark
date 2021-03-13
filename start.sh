@@ -1,3 +1,2 @@
 #!/bin/bash
-export FLASK_APP=nav
-flask run
+waitress-serve --call 'nav:create_app'
