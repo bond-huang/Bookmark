@@ -7,16 +7,10 @@ nohup waitress-serve --call 'nav:create_app' > nohup.log 2>&1 &
 if [ $? -ne 0 ];then
     exit 1
 fi
-git clone https://${GH_REF} .temp
-cd .temp
-git checkout -p gh-pages
-cd ../
-mv .temp/.git dist
-cd dist
-git status
+cd ./dist
+git init
 sleep 5
 git add .
 git commit -m "Update gh-pages"
-git push -f "https://${GH_TOKEN}@${GH_REF}" gh-pages:gh-pages
-
+git push -f --force --quiet "https://${GH_TOKEN}@${GH_REF}" master:gh-pages
 
