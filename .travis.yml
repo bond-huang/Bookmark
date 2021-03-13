@@ -8,24 +8,9 @@ install:
 env:
  global:
     - GH_REF: github.com/bond-huang/navigator.git
-script:
-  - travis_wait 10 bash start.sh
-after_script:
-  - git config user.name "huang"
-  - git config user.email "huang19891023@163.com"
-  - git config --global core.quotepath false
-  - git clone https://${GH_REF} .temp
-  - cd .temp
-  - git checkout gh-pages
-  - cd ../
-  - mv .temp/.git dist
-  - cd dist
-  - git status
-  - sleep 5
-  - git add .
-  - git commit -m "Update gh-pages"
-  - git remote add origin git@github.com:bond-huang/navigator.git
-  - git push -f "https://${GH_TOKEN}@${GH_REF}" gh-pages:gh-pages
 branches:
   only:
     - main
+script:
+  - travis_wait 10 bash start.sh
+
