@@ -9,7 +9,7 @@ if [ $? -ne 0 ];then
 fi
 git clone https://${GH_REF} .temp
 cd .temp
-git checkout gh-pages
+git checkout --orphan gh-pages
 cd ../
 mv .temp/.git dist
 cd dist
