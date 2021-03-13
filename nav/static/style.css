@@ -1,0 +1,16 @@
+
+.editicon i {
+    color: rgba(255, 255, 255, 0);
+}
+
+.editicon i:hover {
+    color: green;
+}
+
+.deleteicon i {
+    color: rgba(255, 255, 255, 0);
+}
+
+.deleteicon i:hover {
+    color: red;
+}
