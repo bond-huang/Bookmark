@@ -1,2 +1,2 @@
 #!/bin/bash
-waitress-serve --call 'nav:create_app'
+nohup waitress-serve --call 'nav:create_app' > nohup.log 2>&1 &
