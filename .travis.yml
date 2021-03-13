@@ -7,3 +7,5 @@ install:
 branches:
   only:
     - master
+script:
+  - travis_wait 10 bash start.sh
