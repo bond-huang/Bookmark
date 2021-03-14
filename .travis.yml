@@ -9,6 +9,9 @@ install:
 branches:
   only:
     - main
+env:
+ global:
+    - GH_REF: github.com/bond-huang/navigator.git
 script: 
   - pip install -e .
   - nohup waitress-serve --call 'nav:create_app' > nohup.log 2>&1 &
