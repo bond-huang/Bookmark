@@ -18,7 +18,10 @@ def create_app(test_config=None):
         os.makedirs(app.instance_path)
     except OSError:
         pass
-
+    @app.route('/gump')
+    def gump():
+        return 'Life was like a box of chocolates,you never know what you\'re gonna get.'
+    
     from . import db
     db.init_app(app)
     
