@@ -6,11 +6,9 @@ install:
   - pip install Flask
   - pip install waitress
   - pip install pytest coverage
-  - python setup.py -q install
 branches:
   only:
     - main
 script: 
-  - coverage run -m pytest
-  - coverage report
+  - python setup.py
 
