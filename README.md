@@ -18,16 +18,16 @@ Initialized the database
 ```
 ## Example
 Choose a main category：   
-![main category](https://ebook.big1000.com/14-%E4%BA%91%E5%B9%B3%E5%8F%B0/01-OpenShift/openshift-3.png)
+![main category](https://ebook.big1000.com/15-HTML+CSS+JavaScript/05-%E7%BD%91%E9%A1%B5%E5%AF%BC%E8%88%AA%E5%AE%9E%E4%BE%8B/home.png)
 
 Add：   
-![Add](add.png)
+![Add](https://ebook.big1000.com/15-HTML+CSS+JavaScript/05-%E7%BD%91%E9%A1%B5%E5%AF%BC%E8%88%AA%E5%AE%9E%E4%BE%8B/add.png)
 
 Edit：   
-![Edit](edit.png)
+![Edit](https://ebook.big1000.com/15-HTML+CSS+JavaScript/05-%E7%BD%91%E9%A1%B5%E5%AF%BC%E8%88%AA%E5%AE%9E%E4%BE%8B/edit.png)
 
 Delete：   
-![Delete](delete.png)
+![Delete](https://ebook.big1000.com/15-HTML+CSS+JavaScript/05-%E7%BD%91%E9%A1%B5%E5%AF%BC%E8%88%AA%E5%AE%9E%E4%BE%8B/delete.png)
 
 ## Build documentation 
 The build documentation on the following website:     
