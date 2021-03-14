@@ -1,0 +1,4 @@
+include nav/schema.sql
+graft nav/static
+graft nav/templates
+global-exclude *.pyc
