@@ -9,5 +9,5 @@ install:
 branches:
   only:
     - main
-script: pytest
+script: coverage run -m pytest
 
