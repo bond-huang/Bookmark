@@ -5,12 +5,9 @@ python:
 install:
   - pip install Flask
   - pip install waitress
-env:
- global:
-    - GH_REF: github.com/bond-huang/navigator.git
+  - pip install pytest coverage
 branches:
   only:
     - main
-script:
-  - travis_wait 10 bash start.sh
+script: pytest
 
