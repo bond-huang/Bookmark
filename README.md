@@ -18,7 +18,7 @@ Initialized the database
 ```
 ## Example
 Choose a main category：   
-![main category](https://github.com/bond-huang/navigator/blob/main/home.png)
+![main category](https://github.com/bond-huang/navigator/blob/main/home.jpg)
 
 Add：   
 ![Add](add.png)
