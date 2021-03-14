@@ -10,5 +10,5 @@ branches:
   only:
     - main
 script: 
-  - python3 setup.py
+  - setup.py
 
