@@ -18,7 +18,7 @@ Initialized the database
 ```
 ## Example
 Choose a main category：   
-![main category](https://github.com/bond-huang/navigator/blob/56635029a708e4d1eb9e84db39b5d934c8fdf1cb/home.jpg)
+![main category](https://ebook.big1000.com/14-%E4%BA%91%E5%B9%B3%E5%8F%B0/01-OpenShift/openshift-3.png)
 
 Add：   
 ![Add](add.png)
